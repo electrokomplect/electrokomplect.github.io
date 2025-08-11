@@ -1,77 +1,89 @@
 <style>
-body {
-  font-family: Inter, system-ui, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #0b0f14;
-  color: #e6edf3;
-}
-.container {
-  display: flex;
-  min-height: 100vh;
-}
-.sidebar {
-  width: 300px;
-  background: #111722;
-  padding: 20px;
-  border-right: 1px solid #233042;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.sidebar h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.status {
-  display: inline-block;
-  background: #1b2332;
-  border: 1px solid #233042;
-  border-radius: 8px;
-  padding: 5px 10px;
-  font-size: 13px;
-  margin-bottom: 15px;
-}
-.tech {
-  margin-top: 15px;
-}
-.tech span {
-  display: inline-block;
-  background: #172132;
-  border: 1px solid #233042;
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 12px;
-  margin: 3px 3px 0 0;
-}
-.contacts a {
-  display: block;
-  color: #7dcfff;
-  text-decoration: none;
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-.main {
-  flex: 1;
-  padding: 30px;
-  overflow-x: hidden;
-}
-h2 {
-  margin-top: 0;
-  color: #7dcfff;
-}
-.section {
-  margin-bottom: 40px;
-}
-.section ul {
-  padding-left: 20px;
-}
-.section li {
-  margin-bottom: 8px;
-}
+  body {
+    font-family: Inter, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0b0f14;
+    color: #e6edf3;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 300px;
+    background: #111722;
+    padding: 20px;
+    border-right: 1px solid #233042;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .status {
+    display: inline-block;
+    background: #1b2332;
+    border: 1px solid #233042;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .tech {
+    margin-top: 15px;
+  }
+
+  .tech span {
+    display: inline-block;
+    background: #172132;
+    border: 1px solid #233042;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin: 3px 3px 0 0;
+  }
+
+  .contacts a {
+    display: block;
+    color: #7dcfff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .main {
+    flex: 1;
+    padding: 30px;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #7dcfff;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section ul {
+    padding-left: 20px;
+  }
+
+  .section li {
+    margin-bottom: 8px;
+  }
 </style>
 
 <div class="container">
@@ -99,20 +111,22 @@ h2 {
 
   <div class="main">
     <section class="section">
-    <p style="margin:0; font-size:15px; line-height:1.6;">
-      Помогаю компаниям превратить хаотичные данные в завершённую систему аналитики — 
-      от сырых ETL до стабильных пайплайнов, автоматизированного DWH и наглядных дашбордов. 
-      Строю целостную систему, в которой данные обрабатываются, хранятся и визуализируются без разрывов.
-      Цель — дать клиенту полный спектр услуг под ключ, чтобы он мог обратиться в одно окно и не тратить время на координацию подрядчиков.
-    </p>
-  </section>
-    <div class="section">
-      ## Чем помогаю
-      - Проектирую и поднимаю **DWH** под отчётность и аналитику.
-      - Собираю стабильные **ETL/ELT** пайплайны (Airflow, dbt, Python).
-      - Оптимизирую **BI** контуры: модель, агрегаты, SLA.
-      - Внедряю **DataOps**: CI/CD, тесты, мониторинг.
-    </div>
+      <p style="margin:0; font-size:15px; line-height:1.6;">
+        Помогаю компаниям превратить хаотичные данные в завершённую систему аналитики —
+        от сырых ETL до стабильных пайплайнов, автоматизированного DWH и наглядных дашбордов.
+        Строю целостную систему, в которой данные обрабатываются, хранятся и визуализируются без разрывов.
+        Цель — дать клиенту полный спектр услуг под ключ, чтобы он мог обратиться в одно окно и не тратить время на
+        координацию подрядчиков.
+      </p>
+    </section>
+    <section class="section">
+      <p style="margin:0; font-size:15px; line-height:1.6;">
+        Проект начинается с глубокого погружения: анализ цели, понимание данных, формулировка KPI.
+        Затем — архитектура DWH и ETL-конвейеры, автоматизация с CI/CD, визуализация и мониторинг.
+        Завершаем передачей системы под ключ, готовой к эксплуатации и масштабированию.
+      </p>
+    </section>
+
 
     <div class="section">
       ## Компании и проекты
@@ -136,14 +150,47 @@ h2 {
       ## Публикации
       - [Habr: Аналитика профессии в три клика](https://habr.com/ru/post/658895/)
       - [Habr: Market analytics of a profession](https://habr.com/ru/articles/716374/)
-      - [Medium: Power BI ↔ SAP HANA](https://medium.com/@gorin.igor/how-to-connect-to-sap-hana-from-power-bi-6376b9df4747)
+      - [Medium: Power BI ↔ SAP
+      HANA](https://medium.com/@gorin.igor/how-to-connect-to-sap-hana-from-power-bi-6376b9df4747)
     </div>
+    <section class="section">
+      <h3 class="head">
+        Зоны компетенции
+      </h3>
+      <ul>
+        <li>Построение и автоматизация конвейеров данных: оркестрация, интеграция, контроль качества</li>
+        <li>Проектирование и внедрение хранилищ и витрин данных для аналитики</li>
+        <li>Разработка и оптимизация BI-решений под бизнес-требования</li>
+        <li>DevOps/DataOps подходы для стабильности и масштабирования аналитики</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h3 class="head">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 2l8 4.6v10.8L12 22 4 17.4V6.6L12 2z" stroke="currentColor" />
+        </svg>
+        Инструменты
+      </h3>
+      <div class="chips">
+        <span class="chip">Airflow</span>
+        <span class="chip">dbt</span>
+        <span class="chip">Postgres</span>
+        <span class="chip">ClickHouse</span>
+        <span class="chip">SAP HANA</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">SAP SAC</span>
+        <span class="chip">Superset</span>
+        <span class="chip">Docker</span>
+        <span class="chip">GitHub Actions</span>
+        <span class="chip">Linux</span>
+      </div>
+    </section>
 
     <div class="section">
       ## Полный стек
-      **Orchestration/ETL:** Airflow, dbt, Python, Kafka, Spark  
-      **Storage/DWH:** Postgres, ClickHouse, SAP HANA, Databricks/Fabric  
-      **BI:** Power BI, SAP SAC, Superset  
+      **Orchestration/ETL:** Airflow, dbt, Python, Kafka, Spark
+      **Storage/DWH:** Postgres, ClickHouse, SAP HANA, Databricks/Fabric
+      **BI:** Power BI, SAP SAC, Superset
       **DevOps/DataOps:** Docker, GitHub Actions, Linux
     </div>
   </div>
