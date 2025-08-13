@@ -85,8 +85,130 @@
     margin-bottom: 8px;
   }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0c10;
+    --card: #14161a;
+    --text: #e7e9ee;
+    --muted: #a8b0bd;
+    --acc: #5ac8fa;
+  }
+
+  * {
+    box-sizing: border-box
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 Inter, system-ui
+  }
+
+  a {
+    color: var(--acc);
+    text-decoration: none
+  }
+
+  a:hover {
+    opacity: .9
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px
+  }
+
+  h1 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin: 8px 0 12px
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 28px 0 12px
+  }
+
+  .muted {
+    color: var(--muted)
+  }
+
+  .section {
+    margin: 28px 0;
+    padding: 20px;
+    border: 1px solid #21242a;
+    border-radius: 16px;
+    background: var(--card)
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid #2a2f36;
+    background: #1a1e24
+  }
+
+  .btn.primary {
+    background: var(--acc);
+    color: #001018;
+    border-color: transparent;
+    font-weight: 600
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px
+  }
+
+  .chip {
+    border: 1px solid #2a2f36;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 14px;
+    background: #0f1115
+  }
+
+  .card {
+    flex: 1 1 280px;
+    padding: 16px;
+    border: 1px solid #20242a;
+    border-radius: 14px;
+    background: #0f1115
+  }
+
+  .logos {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: .85
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 8px 0 18px
+  }
+</style>
+
 
 <div class="container">
+
   <div class="sidebar">
     <div>
       <h1>ИП Горин Игорь</h1>
@@ -139,7 +261,7 @@
       <h3 class="head">
         Проекты в компаниях
       </h3>
-      **Газпром** **РЖД** **Силовые машины** **Россети** **Сбер** **Heineken** **Субъект РФ** **Росатом**
+      Газпром * РЖД * Силовые машины ** Россети ** Сбер ** Heineken ** Субъект РФ ** Росатом
     </div>
 
     <div class="section">
@@ -160,8 +282,9 @@
       </ul>
     </div>
 
+
     <section class="section">
-      <h3 class="head">
+      <h3>
         <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
           <path
             d="M21.67 18.17l-6.36-6.36a6.5 6.5 0 01-8.49-8.49l4.24 4.24 2.12-2.12L8.94 1.2a6.5 6.5 0 018.49 8.49l6.36 6.36-2.12 2.12zM3 21l5.5-5.5"
@@ -169,17 +292,26 @@
         </svg>
         Стек технологий
       </h3>
-
-    <div class="section">
-      <div class="tech">
-        <p><span> Orchestration/ETL: </span> Airflow, dbt, Python, ApacheNiFi, Spark</p>
-        <p><span>Storage/DWH: </span>S3, Postgres, ClickHouse, SAP HANA, Databricks/Fabric</p>
-        <p><span>BI: </span> Power BI, SAP SAC, Superset, DataLens, Looker</p>
-        <p><span>DevOps/DataOps: </span> Docker, GitHub, GitHub Actions, Linux</p>
+      <div>Orchestration / ETL</div>
+      <div class="tech" style="margin-top:5px">
+        <span class="chip">Airflow</span><span class="chip">dbt</span><span class="chip">Python</span><span
+          class="chip">Kafka</span>
       </div>
+      <div style="margin-top:10px">Storage / DWH</div>
+      <div class="tech" style="margin-top:5px">
+        <span class="chip">Postgres</span><span class="chip">ClickHouse</span><span class="chip">SAP HANA</span><span
+          class="chip">Fabric/Databricks</span>
+      </div>
+      <div style="margin-top:10px">BI</div>
+      <div class="tech" style="margin-top:5px">
+        <span class="chip">Power BI</span><span class="chip">SAP SAC</span><span class="chip">Superset</span>
+      </div>
+      <div style="margin-top:10px">DevOps / DataOps</div>
+      <div class="tech" style="margin-top:5px">
+        <span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">Linux</span>
+      </div>
+    </section>
 
 
-
-
-    </div>
   </div>
+</div>
